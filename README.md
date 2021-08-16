@@ -1,5 +1,7 @@
 # SDK_api_paiement_cinetpay
 
+# Après avoir intégré le SDK, vous aurez des reponses sur chaque url, on a 
+
 # ************************************INITIALISATION DE PAIEMENT*****************************************
 #                                                                                                       #
 #                  *****************************************************************                    #
