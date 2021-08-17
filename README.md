@@ -16,7 +16,7 @@ from cinetpay_sdk.s_d_k import Cinetpay
 
 Avec ce import, vous avez accès à la classe Cinetpay ainsi que ses méthodes qui vous permettront de communiquer avec le système de Cinetpay à travers des envois de données.
 
-Nous vous conseillons de consulter l'exemple qui se trouve dans le dossier src pour plus de compréhension.
+Nous vous conseillons de consulter l'exemple qui se trouve dans le dossier src/cinetpay_sdk pour plus de compréhension.
 
 
 
