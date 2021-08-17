@@ -2,6 +2,7 @@ import requests
 
 
 class Cinetpay :
+    """This class allows to create Cinetpay Client"""
  
     def __init__(self,apikey,site_id):
   
@@ -11,7 +12,9 @@ class Cinetpay :
         self.site_id = site_id
                                                                                                                                            
     def PaymentInitialization(self,data_from):
-                                                                                                                                                                                                                                  
+
+        """Here is the Client's method which permits to Initialize a payment"""    
+
         r = requests.post(self.url_base_1,                                   
                 data = {                                                                                  
                     "amount": data_from['amount'],                                                                       
@@ -28,7 +31,9 @@ class Cinetpay :
                                                                                                             
         return r.json()                                                                                                                                                                                   
                                                                                                             
-    def TransactionVerfication_trx(self,transaction_id) :                                                      
+    def TransactionVerfication_trx(self,transaction_id) : 
+
+        """This method permits to check or verify any transaction by transaction Id"""                                                  
                                                                   
         r = requests.post(self.url_base_2,                         
         data = {                                                                                        
@@ -41,6 +46,8 @@ class Cinetpay :
         return r.json()  
 
     def TransactionVerfication_token(self,token) :
+
+        """This method permits to check or verify any transaction by token""" 
                                                                                                                                                                                                      
         r = requests.post(self.url_base_2,                         
             data = {                                                                                    

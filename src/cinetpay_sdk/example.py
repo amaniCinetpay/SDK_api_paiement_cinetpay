@@ -24,7 +24,7 @@ data = {               #                                                        
                                                     # be redirected after the payment|  #                |  #                                                    
 }                                   #                                                                    |  #
 #---------------------------------------------------------------------------------------------------------  #
-print(example.PaymentInitialization(data))                                                                         #
+print(example.PaymentInitialization(data))                                                                  #
 #                                                                                                           #
 #                   *****************************************************************                       #
 #                   *                 Success Reply Example :                       *                       #
@@ -61,9 +61,9 @@ print(example.PaymentInitialization(data))                                      
 #                                                                                                           #
 # --------------------------------------------Request Example----------------------------------------       #
 #                                                                                                   |       #
-token ="hglkdkf458555s"  # the payment_token obtained in the transaction initiation                 |                                                      |       #
+token ="hglkdkf458555s"  # the payment_token obtained in the transaction initiation                 |       #                                               |       #
 # ---------------------------------------------------------------------------------------------------       #                                                                                                  
-print(example.TransactionVerfication_token(token))                                                                #
+print(example.TransactionVerfication_token(token))                                                          #
 #                                                                                                           #
 #                                                                                                           #
 #                  *****************************************************************                        #
@@ -112,7 +112,7 @@ print(example.TransactionVerfication_token(token))                              
 #                                                                                                   |       #
 transaction_id = "Dt1111"  # Your transaction_id                                                    |       #
 # ---------------------------------------------------------------------------------------------------       #                                                                                                  
-print(example.TransactionVerfication_trx(transaction_id))                                                          #
+print(example.TransactionVerfication_trx(transaction_id))                                                   #      #
 #                                                                                                           #
 #                                                                                                           #
 #                  *****************************************************************                        #
