@@ -123,4 +123,4 @@ print(client.TransactionVerfication_token(token))
 If you've instead found a bug in the library or would like new features added, go ahead and open issues or pull requests against this repo!
 
 [apidocs]: https://cinetpay.com/developer/api/paiement
-[libdocs]: https://github.com/amaniCinetpay/SDK_api_paiement_cinetpay.git
+[libdocs]: https://docs.python.org/3/
