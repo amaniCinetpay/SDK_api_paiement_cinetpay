@@ -1,32 +1,33 @@
 from s_d_k import Cinetpay
 
 
-apikey = "39955468c7a8c0cef1.68322505"    # Votre Apikey                                                                |   #
-site_id = "124598"     # Votre site_id  
+apikey = "39955468c7a8c0cef1.68322505" #your apikey                                                              |   #
+site_id = "124598" #your site_id  
 
-exemple = Cinetpay(apikey,site_id)
+example = Cinetpay(apikey,site_id)
 
 
-# """"""""""""""""""""""""""""""""""INITIALISATION DE PAIEMENT"""""""""""""""""""""""""""""""""""""""""""""""
+# """"""""""""""""""""""""""""""""""""""""""PAYMENT INITIATION""""""""""""""""""""""""""""""""""""""""""""""
 #                                                                                                           #
 #                                                                                                           #
-# ----------------------------Les paramètres obligatoires que vous devez remplir -------------------------  #
+# --------------------------------------------Request Example---------------------------------------------  #
 #                                                                                                        |  #
 data = {               #                                                                                 |  #
-    'amount' : 00000,  #  Le montant de la transaction                                                   |  #                                                                                                                             |
-    'currency' : "XOF",  # La devise monétaire (XOF, XAF, CDF, GNF)                                      |  #                
-    'transaction_id' : "GRD123456789",  # Identification de la transaction (unique)                      |  #                
-    'description' : "TRANSACTION DESCRIPTION", # Description du paiement en cours                        |  #         
-    'return_url' : "https://www.exemple.com/return",#Le lien où le client sera redirigé après le paiement|  #
-    'notify_url' : "https://www.exemple.com/notify", #Le lien de notification du paiement                |  #
-    'customer_name' : "exemple", # Le nom du client                                                      |  #                                                  
-    'customer_surname' : "exemple", #Le prénom du client                                                 |  #                                                        
+    'amount' : 00000,  #   transaction’s amount-------                                                   |  #                                                                                                                             |
+    'currency' : "XOF",  # transaction’s currency (XOF, XAF, CDF, GNF)                                   |  #                
+    'transaction_id' : "GRD123456789",  # unique transaction ID                                          |  #                
+    'description' : "TRANSACTION DESCRIPTION", # description of the transaction’s purpose                |  #         
+    'notify_url' : "https://www.example.com/notify", # the payment notification link                     |  #
+    'customer_name' : "example",  #the customer’s name                                                   |  #                                                  
+    'customer_surname' : "example", #the customer’s surname                                              |  #
+    'return_url' : "https://www.example.com/return",#the link of the page to which the customer will     |  #
+                                                    # be redirected after the payment|  #                |  #                                                    
 }                                   #                                                                    |  #
 #---------------------------------------------------------------------------------------------------------  #
-exemple.PaymentInitialization(data)                                                                         #
+print(example.PaymentInitialization(data))                                                                         #
 #                                                                                                           #
 #                   *****************************************************************                       #
-#                   *                 Exemple Réponse Succès:                       *                       #
+#                   *                 Success Reply Example :                       *                       #
 #                   *                                                               *                       #
 #                   *  {                                                            *                       #
 #                   *     "code": "201",                                            *                       #
@@ -42,7 +43,7 @@ exemple.PaymentInitialization(data)                                             
 #                                                                                                           #
 #                                                                                                           #
 #                   *****************************************************************                       #
-#                   *                 Exemple Réponse Erreur                        *                       #
+#                   *                 Failure Reply Example                         *                       #
 #                   *                                                               *                       #
 #                   * {                                                             *                       #
 #                   *    "code": "ERROR_CODE",                                      *                       #
@@ -56,19 +57,17 @@ exemple.PaymentInitialization(data)                                             
 
 
 
-
-#""""""""""""""""""""""""""""""""""""VERIFICATION DE TRANSACTION""""""""""""""""""""""""""""""""""""""""""""#
+#"""""""""""""""""""""""""""""""""""""""""""CHECK TRANSACTION WITH TOKEN""""""""""""""""""""""""""""""""""""#
 #                                                                                                           #
-# --------------------Les paramètres obligatoires que vous devez remplir ----------------------------       #
+# --------------------------------------------Request Example----------------------------------------       #
 #                                                                                                   |       #
-transaction_id = "XXXXXX"  # Votre transaction_id                                                   |       #
-token ="XXXXXX"  # Le payment_token obtenu lors de l’initialisation du paiement                     |       #
+token ="hglkdkf458555s"  # the payment_token obtained in the transaction initiation                 |                                                      |       #
 # ---------------------------------------------------------------------------------------------------       #                                                                                                  
-exemple.TransactionVerfication_token("xxxxxxxx")                                                            #
+print(example.TransactionVerfication_token(token))                                                                #
 #                                                                                                           #
 #                                                                                                           #
 #                  *****************************************************************                        #
-#                  *                 Exemple Réponse Succès:                       *                        #
+#                  *                 Success Reply Example :                       *                        #
 #                  *                                                               *                        #
 #                  *    {                                                          *                        #
 #                  *        "code": "00",                                          *                        #
@@ -87,7 +86,56 @@ exemple.TransactionVerfication_token("xxxxxxxx")                                
 #                                                                                                           #                                                                                                         
 #                                                                                                           #
 #                  *****************************************************************                        #
-#                  *                 Exemple Réponse Erreur                        *                        #
+#                  *                 Failure Reply Example:                        *                        #
+#                  *                                                               *                        #
+#                  *    {                                                          *                        #
+#                  *        "code": "600",                                         *                        #
+#                  *        "message": "PAYMENT_FAILED",                           *                        #
+#                  *        "api_response_id": "1617808521.2503",                  *                        #
+#                  *        "data": {                                              *                        #
+#                  *        "payment_method": "OM",                                *                        #
+#                  *        "payment_date": " ",                                   *                        #
+#                  *        "phone_number": "0749012966",                          *                        #
+#                  *        "phone_prefix": "225"                                  *                        #
+#                  *        }                                                      *                        #   
+#                  *    }                                                          *                        #
+#                  *****************************************************************                        #
+#                                                                                                           #
+#############################################################################################################
+
+
+
+
+#""""""""""""""""""""""""""""""""""CHECK TRANSACTION WITH TRANSACTION ID""""""""""""""""""""""""""""""""""""#
+#                                                                                                           #
+# --------------------------------------------Request Example----------------------------------------       #
+#                                                                                                   |       #
+transaction_id = "Dt1111"  # Your transaction_id                                                    |       #
+# ---------------------------------------------------------------------------------------------------       #                                                                                                  
+print(example.TransactionVerfication_trx(transaction_id))                                                          #
+#                                                                                                           #
+#                                                                                                           #
+#                  *****************************************************************                        #
+#                  *                 Success Reply Example :                       *                        #
+#                  *                                                               *                        #
+#                  *    {                                                          *                        #
+#                  *        "code": "00",                                          *                        #
+#                  *        "message": "SUCCES",                                   *                        #
+#                  *        "api_response_id": "1617808789.7749",                  *                        #
+#                  *        "data": {                                              *                        #
+#                  *        "operator_id": "8210407187720",                        *                        #
+#                  *        "payment_method": "FLOOZ",                             *                        #
+#                  *        "payment_date": "2021-04-07 14:07:24",                 *                        #
+#                  *        "phone_number": "0102324373",                          *                        #
+#                  *        "phone_prefix": "225"                                  *                        #
+#                  *        }                                                      *                        #
+#                  *    }                                                          *                        #
+#                  *****************************************************************                        #
+#                                                                                                           #
+#                                                                                                           #                                                                                                         
+#                                                                                                           #
+#                  *****************************************************************                        #
+#                  *                 Failure Reply Example:                        *                        #
 #                  *                                                               *                        #
 #                  *    {                                                          *                        #
 #                  *        "code": "600",                                         *                        #

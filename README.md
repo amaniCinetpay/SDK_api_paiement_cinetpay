@@ -69,7 +69,7 @@ We suggest storing your credentials as environment variables. Why? You'll never
 have to worry about committing your credentials and accidentally posting them
 somewhere public.
 
-### Initiate a Payment
+### initialize a Payment
 
 ```python
 from cinetpay_sdk.s_d_k import Cinetpay
