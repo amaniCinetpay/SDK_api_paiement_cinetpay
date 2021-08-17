@@ -1,8 +1,0 @@
-LICENCE
-README.md
-pyproject.toml
-setup.cfg
-src/SDK_api_paiement_cinetpay_amaniCinetpay.egg-info/PKG-INFO
-src/SDK_api_paiement_cinetpay_amaniCinetpay.egg-info/SOURCES.txt
-src/SDK_api_paiement_cinetpay_amaniCinetpay.egg-info/dependency_links.txt
-src/SDK_api_paiement_cinetpay_amaniCinetpay.egg-info/top_level.txt
