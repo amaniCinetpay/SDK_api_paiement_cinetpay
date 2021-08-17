@@ -30,7 +30,7 @@ Pour ce faire :
     • Cliquer ensuite sur le menu « Intégrations » ;
     • Vous y trouverez votre APIKEY et votre SITEID .
 
-# 1-Initialisation de paiement
+# a-Initialisation de paiement
 
 Pour l'initialisation du paiement, vous avez juste besoin d'instancier la classe Cinetpay puis utiliser 
 sa méthode PaymentInitialization en lui passant les variables correctement remplies et ensuite vous aurez 
@@ -38,13 +38,13 @@ des retours de Cinetpay que vous exploiterez.
 NB : Vous devez sauvegarder le payment_token dans le retour de Cinetpay dans votre base de données.
 Nous vous conseillons de consulter l'exemple dans ce SDK pour plus de compréhension.
 
-# 2-Page de paiement
+# b-Page de paiement
 
 Après avoir obtenu l’url de paiement à la requête précédente, il vous suffit juste de lancer cette url dans un
 navigateur web pour vous retrouver sur le guichet de paiement, dans le cas des applications mobile, vous
 pouvez faire appel à une WebView pour l’exécution du guichet de paiement.Vous avez ainsi fini la première partie de l’intégration CinetPay.
 
-# 3-Notification 
+# c-Notification 
 
 Le lien/url de notification (notify_url) est appelé par CinetPay pour vous notifier de l’état d’un paiement.
 Cette url doit être disponible pour accueillir des requêtes HTTP de type GET et POST.
@@ -59,7 +59,7 @@ votre base de données, car vous avez l’historique de vos paiements dans votre
 Ex : Application de collecte de dons
 
 
-# 4-Configurer l’url de notification
+# d-Configurer l’url de notification
 
 Le serveur exécute une requête de type POST contenant :
     • cpm_trans_id: la variable transaction_id que vous avez envoyé à l’initialisation
