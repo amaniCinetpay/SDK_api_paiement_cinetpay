@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/cinetpay_sdk/__init__.py
+src/cinetpay_sdk/exemple.py
+src/cinetpay_sdk/s_d_k.py
+src/cinetpay_sdk/setup.py
+src/cinetpay_sdk_amaniCinetpay.egg-info/PKG-INFO
+src/cinetpay_sdk_amaniCinetpay.egg-info/SOURCES.txt
+src/cinetpay_sdk_amaniCinetpay.egg-info/dependency_links.txt
+src/cinetpay_sdk_amaniCinetpay.egg-info/top_level.txt

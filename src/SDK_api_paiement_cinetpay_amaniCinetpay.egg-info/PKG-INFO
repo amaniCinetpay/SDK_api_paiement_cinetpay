@@ -1,24 +1,24 @@
+Metadata-Version: 2.1
+Name: SDK-api-paiement-cinetpay-amaniCinetpay
+Version: 0.0.1
+Summary: This is Cinetpay SDK for payment integration
+Home-page: https://github.com/amaniCinetpay/SDK_api_paiement_cinetpay.git
+Author: Amani
+Author-email: amani.kouakou@cinetpay.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/amaniCinetpay/SDK_api_paiement_cinetpay.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
 # Réussir l’intégration de CinetPay sur sa plateforme
 
-Ce SDK facilite l'intégration de la solution de paiement de Cinetpay.
-Vous avez la possibilité de l'importer dans votre code comme un package de python
-Pour se faire , 
-
-# 1-vous devez taper la ligne de commande suivante :
-
-pip install -i https://test.pypi.org/simple/ cinetpay-sdk-amaniCinetpay==0.0.1
-
-# 2-Importez le package en tapant la ligne de code suivante dans votre code :
-
-from cinetpay_sdk.s_d_k import Cinetpay
-
-# 3-Utilisation du SDK
-
-Avec ce import, vous avez accès à la classe Cinetpay ainsi que ses méthodes qui vous permettront de communiquer avec le système de Cinetpay à travers des envois de données.
-
-Nous vous conseillons de consulter l'exemple qui se troouve dans le dossier src pour plus de compréhension.
-
-
+Ce tutoriel s’adresse à tous les marchands CinetPay qui veulent encaisser des fonds via le mobile money, les
+cartes bancaires ou les wallets par des processus automatiques (Site internet, App mobiles etc…).
 
 # Préréquis
 
@@ -82,5 +82,9 @@ données.
 
 Afin de l'utiliser dans ce SDk, vous avez juste qu'à instancier la classe Cinetpay puis utiliser soit la méthode
 TransactionVerfication_token ou la méthode TransactionVerfication_trx en lui passant le paramètre qui convient.
+
+Bravo et bien joué !!! Vous avez terminé l'intégration.
+
+
 
 
