@@ -1,6 +1,5 @@
 from s_d_k import Cinetpay
 
-
 apikey = "39955468c7a8c0cef1.68322505" #your apikey                                                              |   #
 site_id = "124598" #your site_id  
 

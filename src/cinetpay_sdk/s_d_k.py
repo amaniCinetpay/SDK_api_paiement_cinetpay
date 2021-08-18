@@ -1,5 +1,7 @@
 import requests
+from exceptions import Exceptions
 
+exc = Exceptions()
 
 class Cinetpay :
     """This class allows to create Cinetpay Client"""
@@ -14,7 +16,6 @@ class Cinetpay :
     def PaymentInitialization(self,data_from):
 
         """Here is the Client's method which permits to Initialize a payment"""    
-
         r = requests.post(self.url_base_1,                                   
                 data = {                                                                                  
                     "amount": data_from['amount'],                                                                       
