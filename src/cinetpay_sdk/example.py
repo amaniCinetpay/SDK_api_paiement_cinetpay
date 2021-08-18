@@ -14,7 +14,7 @@ example = Cinetpay(apikey,site_id)
 data = {               #                                                                                 |  #
     'amount' : 00000,  #   transaction’s amount-------                                                   |  #                                                                                                                             |
     'currency' : "XOF",  # transaction’s currency (XOF, XAF, CDF, GNF)                                   |  #                
-    'transaction_id' : "GRD123456789",  # unique transaction ID                                          |  #                
+    # 'transaction_id' : "GRD123456789",  # unique transaction ID                                          |  #                
     'description' : "TRANSACTION DESCRIPTION", # description of the transaction’s purpose                |  #         
     'notify_url' : "https://www.example.com/notify", # the payment notification link                     |  #
     'customer_name' : "example",  #the customer’s name                                                   |  #                                                  

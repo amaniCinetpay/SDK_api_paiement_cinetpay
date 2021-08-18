@@ -12,25 +12,28 @@ class Cinetpay :
         self.url_base_2 =  'https://api-checkout.cinetpay.com/v2/payment/check'
         self.apikey = apikey  
         self.site_id = site_id
-                                                                                                                                           
+                                                                                                                                     
     def PaymentInitialization(self,data_from):
+        if exc.exceptions(data_from) == None :
 
-        """Here is the Client's method which permits to Initialize a payment"""    
-        r = requests.post(self.url_base_1,                                   
-                data = {                                                                                  
-                    "amount": data_from['amount'],                                                                       
-                    "apikey": self.apikey,                                                                       
-                    "site_id": self.site_id,                                                                     
-                    "currency": data_from['currency'],                                                                                                                        
-                    "description": data_from['description'],                                                             
-                    "return_url:": data_from['return_url'],                                                              
-                    "notify_url:": data_from['notify_url'],                                                              
-                    "customer_name:": data_from['customer_name'],                                                        
-                    "customer_surname:": data_from['customer_surname']                                                   
-                },                                                                                          
-            )                                                                                               
-                                                                                                            
-        return r.json()                                                                                                                                                                                   
+            """Here is the Client's method which permits to Initialize a payment"""    
+            r = requests.post(self.url_base_1,                                   
+                    data = {                                                                                  
+                        "amount": data_from['amount'],                                                                       
+                        "apikey": self.apikey,                                                                       
+                        "site_id": self.site_id,                                                                     
+                        "currency": data_from['currency'],                                                                                                                        
+                        "description": data_from['description'],                                                             
+                        "return_url:": data_from['return_url'],                                                              
+                        "notify_url:": data_from['notify_url'],                                                              
+                        "customer_name:": data_from['customer_name'],                                                        
+                        "customer_surname:": data_from['customer_surname']                                                   
+                    },                                                                                          
+                )                                                                                               
+                                                                                                                
+            return r.json() 
+        else :
+            return exc.exceptions(data_from)                                                                                                                                                                                  
                                                                                                             
     def TransactionVerfication_trx(self,transaction_id) : 
 
