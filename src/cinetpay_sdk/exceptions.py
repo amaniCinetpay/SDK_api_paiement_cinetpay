@@ -7,7 +7,6 @@ class Exceptions :
         for key in KEYS :
             if key not in list(data.keys()) :
                 to_add.append("{} is required".format(key))
-
         if  to_add != [] : 
             return to_add
         

@@ -21,7 +21,8 @@ class Cinetpay :
                     data = {                                                                                  
                         "amount": data_from['amount'],                                                                       
                         "apikey": self.apikey,                                                                       
-                        "site_id": self.site_id,                                                                     
+                        "site_id": self.site_id,
+                        "transaction_id":data_from['transaction_id'],                                                                    
                         "currency": data_from['currency'],                                                                                                                        
                         "description": data_from['description'],                                                             
                         "return_url:": data_from['return_url'],                                                              
