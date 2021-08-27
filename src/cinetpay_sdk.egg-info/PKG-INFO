@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cinetpay-sdk
-Version: 0.0.2
+Version: 0.1.1
 Summary: This is Cinetpay SDK for payment integration
 Home-page: https://github.com/amaniCinetpay/SDK_api_paiement_cinetpay.git
 Author: Amani Kouakou Noe
@@ -41,7 +41,7 @@ This library supports the following Python implementations:
 Install from PyPi using [pip](https://pip.pypa.io/en/latest/), a
 package manager for Python.
 
-    pip install -i https://test.pypi.org/simple/ cinetpay-sdk-amaniCinetpay==0.0.1
+    pip install -i https://test.pypi.org/simple/ cinetpay-sdk==0.0.2
 
 If pip install fails on Windows, check the path length of the directory. If it is greater 260 characters then enable [Long Paths](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation) or choose other shorter location.
 

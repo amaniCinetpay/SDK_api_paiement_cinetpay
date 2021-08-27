@@ -1,5 +1,8 @@
 import requests
-from exceptions import Exceptions
+try:
+    from exceptions import Exceptions
+except ImportError:
+    from .exceptions import Exceptions
 
 exc = Exceptions()
 

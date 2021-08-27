@@ -24,7 +24,7 @@ This library supports the following Python implementations:
 Install from PyPi using [pip](https://pip.pypa.io/en/latest/), a
 package manager for Python.
 
-    pip install -i https://test.pypi.org/simple/ cinetpay-sdk==0.0.2
+    pip install -i https://test.pypi.org/simple/ cinetpay-sdk==0.1.1
 
 If pip install fails on Windows, check the path length of the directory. If it is greater 260 characters then enable [Long Paths](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation) or choose other shorter location.
 
